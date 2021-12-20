@@ -1,0 +1,29 @@
+.sidebar {
+  display: flex;
+  margin-right: 20px;
+  background-color: white;
+  width: 200px;
+  height: 600px;
+  border-radius: 8px;
+  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 20%);
+}
+
+.mainMenuList {
+  display: block;
+  margin: 20px 0 0 20px;
+  width: 150px;
+}
+
+.menuItem {
+  display: block;
+  color: #6b6b6b;
+  text-transform: uppercase;
+  padding: 10px 5px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.menuItem:hover {
+  color: #3a3a3a;
+  background-color: #e3e3e3;
+}

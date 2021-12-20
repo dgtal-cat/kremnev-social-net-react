@@ -1,0 +1,26 @@
+.message {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 20px;
+  border-bottom: 1px dashed #e3e3e3;
+}
+
+.id {
+  padding: 5px;
+}
+
+.date {
+  padding: 5px;
+}
+
+.from {
+  font-size: 24px;
+  padding: 10px 5px;
+}
+
+.text {
+  padding: 5px;
+  font-size: 18px;
+  line-height: 1.2;
+}

@@ -1,0 +1,51 @@
+.blockHeader {
+  display: block;
+  text-align: center;
+  width: 100%;
+  padding: 10px;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.profile {
+  display: flex;
+  flex-direction: column;
+}
+
+.profileAvatar img {
+  display: block;
+  width: 200px;
+  height: 200px;
+  border-radius: 20%;
+  border: 1px solid #c4c4c4;
+}
+
+.profileInfo {
+  display: flex;
+  flex-direction: column;
+}
+
+.name {
+  width: 100%;
+  padding: 10px 5px;
+  font-size: 24px;
+}
+
+.login {
+  padding: 5px;
+  font-size: 14px;
+}
+
+.age {
+  padding: 5px;
+}
+
+.profileDescription {
+  padding: 5px;
+}
+
+.profileDescriptionHeader {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 18px;
+}

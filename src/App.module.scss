@@ -1,0 +1,31 @@
+body {
+    background-color: #ececec;
+}
+
+.app {
+
+}
+
+.contentWrapper {
+    display: flex;
+    margin: 0 auto 20px;
+    width: 1200px;
+    height: 600px;
+}
+
+.contentContainer {
+    display: flex;
+    background-color: white;
+    width: 980px;
+    height: 600px;
+    border-radius: 8px;
+    box-shadow: 0 0 8px 0 rgba(0, 0, 0, 20%);
+}
+
+.contentFeed {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 10px 15px;
+    overflow-y: scroll;
+}
