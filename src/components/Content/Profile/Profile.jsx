@@ -1,5 +1,6 @@
 import React, {Component} from "react"
 import style from './Profile.module.scss'
+import avatar from './ava.png'
 
 export default class Profile extends Component {
 
@@ -10,7 +11,7 @@ export default class Profile extends Component {
             <h3 className={style.blockHeader}>My profile</h3>
             <div className={style.profile}>
                <div className={style.profileAvatar}>
-                  <img src="/src/images/avatars/dgtal_cat/ava.png" alt="avatar"/>
+                  <img src={avatar} alt="avatar"/>
                </div>
                <div className={style.profileInfo}>
                   <div className={style.name}>Алексей Кремнев</div>

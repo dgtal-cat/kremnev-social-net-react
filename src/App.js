@@ -11,7 +11,7 @@ import Footer from "./components/Footer/Footer";
 export default class App extends Component {
 
    idGenerator = () => {
-      return Math.floor(Math.random()*1000)
+      return Math.floor(Math.random()*100000)
    }
 
    render() {

@@ -8,13 +8,13 @@ export default class Messages extends Component {
    state = {
       messages: [
          {
-            id: this.props.idGenerator,
+            id: this.props.idGenerator(),
             date: '2021-12-17',
             from: 'Сумасшедшая белка',
             text: 'Привет! Как делища?? Идем тусить в эти выхи?))'
          },
          {
-            id: this.props.idGenerator,
+            id: this.props.idGenerator(),
             date: '2021-12-19',
             from: 'Железный человек',
             text: 'Опять небось филонишь? Разработчиками просто так не рождаются, дружище) Время фигачить!'
@@ -25,7 +25,7 @@ export default class Messages extends Component {
    render() {
 
       const messages = this.state.messages.map((item) => {
-         return <Message key={item.id} date={item.date} from={item.from} text={item.text} />
+         return <Message key={item.id} id={item.id} date={item.date} from={item.from} text={item.text} />
       })
 
       return (
