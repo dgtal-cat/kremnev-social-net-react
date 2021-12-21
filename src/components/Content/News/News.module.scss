@@ -1,0 +1,13 @@
+.blockHeader {
+  display: block;
+  text-align: center;
+  width: 100%;
+  padding: 10px;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.news {
+  display: flex;
+  flex-direction: column;
+}
