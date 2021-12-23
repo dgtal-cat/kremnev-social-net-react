@@ -1,4 +1,4 @@
-.message {
+.newsItem {
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -18,7 +18,7 @@
   color: #888888;
 }
 
-.from {
+.title {
   font-size: 24px;
   padding: 10px 5px;
 }
@@ -27,4 +27,17 @@
   padding: 5px;
   font-size: 18px;
   line-height: 1.2;
+}
+
+.trending {
+  display: flex;
+  width: 300px;
+}
+
+.likes {
+  padding: 5px;
+}
+
+.dislikes {
+  padding: 5px;
 }

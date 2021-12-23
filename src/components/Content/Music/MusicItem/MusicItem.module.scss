@@ -1,4 +1,4 @@
-.message {
+.musicItem {
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -18,12 +18,12 @@
   color: #888888;
 }
 
-.from {
+.title {
   font-size: 24px;
   padding: 10px 5px;
 }
 
-.text {
+.track {
   padding: 5px;
   font-size: 18px;
   line-height: 1.2;
