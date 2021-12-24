@@ -1,7 +1,7 @@
 import React, {Component} from "react"
-import style from './Message.module.scss'
+import style from './MessageItem.module.scss'
 
-export default class Message extends Component {
+export default class MessageItem extends Component {
    render() {
       const {id, date, from, text} = this.props
       return (

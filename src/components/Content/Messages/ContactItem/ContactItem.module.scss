@@ -1,0 +1,31 @@
+.contactItem {
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  border-bottom: 1px dashed #e3e3e3;
+  padding-bottom: 5px;
+}
+
+.id {
+  padding: 5px;
+  font-size: 14px;
+  color: #858585;
+}
+
+.contactName {
+  font-size: 22px;
+  padding: 5px;
+}
+
+.lastMessage {
+  padding: 5px;
+  font-size: 16px;
+  color: #424242;
+  height: 38px;
+  overflow: hidden;
+}
+
+.active {
+  background-color: rgb(175 215 255);
+}

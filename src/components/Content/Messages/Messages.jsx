@@ -1,7 +1,8 @@
 import React, {Component} from "react"
 import style from './Messages.module.scss'
 
-import Message from "./Message/Message"
+import MessageItem from "./MessageItem/MessageItem"
+import ContactItem from "./ContactItem/ContactItem";
 
 export default class Messages extends Component {
 
@@ -19,20 +20,53 @@ export default class Messages extends Component {
             from: 'Железный человек',
             text: 'Опять небось филонишь? Разработчиками просто так не рождаются, дружище) Время фигачить!'
          }
+      ],
+      contacts: [
+         {
+            id: this.props.idGenerator(),
+            active: true,
+            contactName: 'Сумасшедшая белка',
+            lastMessage: 'Привет! Как делища?? Идем тусить в эти выхи?))'
+         },
+         {
+            id: this.props.idGenerator(),
+            active: false,
+            contactName: 'Железный человек',
+            lastMessage: 'Опять небось филонишь? Разработчиками просто так не рождаются, дружище) Время фигачить!'
+         }
       ]
    }
 
    render() {
 
-      const messages = this.state.messages.map((item) => {
-         return <Message key={item.id} id={item.id} date={item.date} from={item.from} text={item.text} />
+      const messages = this.state.messages.map(item => {
+         return <MessageItem
+                  key={item.id}
+                  id={item.id}
+                  date={item.date}
+                  from={item.from}
+                  text={item.text} />
+      })
+
+      const contacts = this.state.contacts.map(item => {
+         return <ContactItem
+                  key={item.id}
+                  id={item.id}
+                  active={item.active}
+                  contactName={item.contactName}
+                  lastMessage={item.lastMessage} />
       })
 
       return (
          <div>
             <h3 className={style.blockHeader}>Messages</h3>
-            <div className={style.messages}>
-               {messages}
+            <div className={style.rowWrapper}>
+               <div className={style.contacts}>
+                  {contacts}
+               </div>
+               <div className={style.messages}>
+                  {messages}
+               </div>
             </div>
          </div>
       )
