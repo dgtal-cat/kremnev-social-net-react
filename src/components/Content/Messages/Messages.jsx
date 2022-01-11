@@ -37,6 +37,26 @@ export default class Messages extends Component {
       ]
    }
 
+   onSelect = (id) => {
+      this.setState(({contacts}) => {
+         const newContacts = contacts.map((item) => {
+            if (item.id === id) {
+               return {
+                  ...item,
+                  active: true
+               }
+            } else return {
+               ...item,
+               active: false
+            }
+         })
+         return {
+            ...this.state,
+            contacts: newContacts
+         }
+      })
+   }
+
    render() {
 
       const messages = this.state.messages.map(item => {
@@ -54,7 +74,8 @@ export default class Messages extends Component {
                   id={item.id}
                   active={item.active}
                   contactName={item.contactName}
-                  lastMessage={item.lastMessage} />
+                  lastMessage={item.lastMessage}
+                  select={() => this.onSelect(item.id)} />
       })
 
       return (
